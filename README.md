@@ -7,6 +7,9 @@ Emulating a Classic Toy with a Web App
 ### 💭 Process
 
 ### 🗒 Learning
+<ul>
+  <li>Reset button function</li>
+</ul>
 
 ### 🌈 Improvement
 
