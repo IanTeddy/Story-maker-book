@@ -9,6 +9,7 @@ Emulating a Classic Toy with a Web App
 ### 🗒 Learning
 <ul>
   <li>Reset button function</li>
+  <li>Only accept one words at a time</li>
 </ul>
 
 ### 🌈 Improvement
