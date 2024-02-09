@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+	<!-- google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+	<div class="main-part">
+		<div class="book">
+			<!-- Left page -->
+			<div class="left-page">
+				<!-- title  -->
+				<h1>See 'N Say<br> Storymaker</h1>
+				<div class="bookworm">
+					<div class="white-background"></div>
+					<img src="images/cute-cartoon-worm.png" alt="bookworm" class="worm-img">
+				</div>
+			</div>
+
+			<!-- Right page -->
+			<div class="right-page">
+				
+				<div class="row first-row">
+					<div class="button first">
+						<button id="firstBtn">1</button>
+					</div>
+					<div class="text">
+						<p id="word1"></p>
+					</div>
+				</div>
+
+
+				<div class="row second-row" >
+					<div class="button second">
+						<button id="secondBtn">2</button>
+					</div>
+					<div class="text">
+						<p id="word2"></p>
+					</div>
+				</div>
+
+				<div class="row third-row">
+					<div class="button third">
+						<button id="thirdBtn">3</button>
+					</div>
+					<div class="text">
+						<p id="word3"></p>
+					</div>
+				</div>
+
+				<div class="row forth-row">
+					<div class="button forth">
+						<button id="forthBtn">4</button>
+					</div>
+					<div class="text">
+						<p id="word4"></p>
+					</div>
+				</div>
+
+				<div class="row fifth-row">
+					<div class="button fifth">
+						<button id="fifthBtn">5</button>
+					</div>
+					<div class="text">
+						<p id="word5"></p>
+					</div>
+				</div>
+
+				<!-- Playback button -->
+				<div class="right-bottom-section">
+					<div class="button_section">
+						<button id="playBack" class="special-button">🔊</button>
+						<p>Play Your Story</p>
+					</div>
+
+					<!-- Surprise button-->
+					<div class="button_section">
+						<button id="surprise" class="special-button">🌈</button>
+						<p id="random-sentense">Create Random Story</p>
+					</div>
+					<!-- Refresh button -->
+					<button id="reset">Clear</button>
+				</div>
+
+			</div>
+		</div> <!-- End book section-->
+	</div>
+
+	
+	<!-- linked app.js -->
+	<script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

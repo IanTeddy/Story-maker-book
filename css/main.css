@@ -1,0 +1,266 @@
+@charset "utf-8";
+/* Assignment 1 | COMP1073 Client-Side JavaScript */
+
+/* inmport font */
+@font-face {
+    font-family: "school";
+    src: url(../fonts/TeachersStudent-Regular.ttf);
+}
+
+h1 {
+    color: rgb(126, 0, 0);
+    font-family: school, Arial, Helvetica, sans-serif;
+    font-size: 4.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(219, 219, 219);
+    margin: 1em 0 0 0;
+    text-transform: uppercase;
+}
+
+ p {
+    font-family: school, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    margin:0;
+    font-weight: bold;
+ }
+
+ body {
+    background-image: url(../images/png-transparent-hand-drawn-kid-pattern.png);
+ }
+
+.main-part {
+    background-color: #FF1C54;
+    width:  80%; 
+    position: relative;
+    border-radius: 10px; 
+    overflow: hidden;
+    text-align: center;
+    margin: 2vw auto;
+    padding: 1.5em;
+}
+
+.book {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+  
+  .left-page,
+  .right-page {
+    position: relative;
+    width: 50%;
+    float: left;
+    padding:1em;
+  }
+  
+  .left-page {
+    background-color: #f7cc0b; 
+  }
+
+/* book worm image styling */
+.bookworm {
+    position: relative;
+    display: inline-block;
+}
+
+.white-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 13vw; 
+    z-index: 1;
+}
+
+/* bookworm image */
+.bookworm  img{
+    display: block;
+    max-width: 100%;
+    width: 30vw;
+    position: inherit;
+    z-index:10;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* bounce animation */
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.bookworm:hover .worm-img {
+    cursor: pointer;
+    animation: bounce 0.5s;
+}
+
+
+.special-button {
+    border: none;
+    border-radius: 50%; 
+    font-size: 3.5vw; 
+    width: 5vw; 
+    height: 5vw; 
+    cursor: pointer;
+    margin-right: .3em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+  .button_section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: .5em;
+  }
+
+  .button_section p {
+    text-align: center; 
+    font-size: 2em;
+    color: rgb(0, 0, 0); 
+  }
+
+.button_section button {
+    background-color: #F9F7C9;
+}
+.button_section button:hover {
+    background-color: #9ed8ff;
+}
+
+#surprise {
+    font-size: 3vw;
+}
+
+.right-page {
+    background-color: #ffd51c;
+  }
+  
+.row {
+    display: flex;
+    align-items: center; 
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 1.5vw;
+    border-radius: 50%; /* Rounded corners */
+    margin: .5em 1em;
+    border: .2em solid #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.first, .first-row{
+    background-color: #8071c2;
+}
+.first:hover {
+    background-color:#a996ff ;
+}
+.second , .second-row{
+    background-color: #39B7EA;
+}
+.second:hover {
+    background-color: #3bc7ff;
+}
+.third, .third-row {
+    background-color: #A2C658;
+}
+.third:hover {
+    background-color:#cfff6e ;
+}
+.forth , .forth-row{
+    background-color: #ff950b;
+}
+.forth:hover {
+    background-color: #ffaf46;
+}
+
+.fifth, .fifth-row {
+    background-color: #E55C88;
+}
+.fifth:hover {
+    background-color: rgb(255, 70, 128);
+}
+
+.button button {
+    display: inline-block;
+    background-color: transparent; 
+    border: none; 
+    color: #fffdfd; 
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.right-bottom-section {
+    margin: 1.5em 0;
+}
+
+#reset {
+    display: inline-block;
+    background-color:#FFF7F1; 
+    border: none; 
+    color: #B67352;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    padding:10px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#reset:hover {
+    background-color: #a65820;
+    color: #fff;
+}
+
+
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .book {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-page,
+    .right-page {
+        width: 100%;
+        padding:1.5em;
+  }
+
+  h1 {
+    margin:0;
+    font-size: 3em;
+  }
+
+  .special-button {
+    width: 8vw;
+    height: 8vw;
+    font-size: 5vw; 
+  }
+  #surprise {
+    font-size: 4vw;
+  }
+  
+}
+
+
