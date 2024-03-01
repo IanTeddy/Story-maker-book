@@ -18,8 +18,8 @@ At first, use an approach that adds new \<p> to HTML, and delete that \<p> when 
 </ul>
 
 
-### 💻 Running the Project
-Visit the website and have some fun!! :rainbow:  <https://ianteddy.github.io/Story-maker-book/> <br/>
+### :rainbow:  Running the Project
+Visit the website and have some fun!! <https://ianteddy.github.io/Story-maker-book/> <br/>
 :warning: Don't forget to unmute audio to listen the sound
 
 
