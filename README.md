@@ -13,8 +13,8 @@ At first, use an approach that adds new \<p> to HTML, and delete that \<p> when 
   <li>Make it only accept one word at a time</li>
 </ul>
 
-### 🌈 Improvement
 
 ### 💻 Running the Project
+Visit website and have some fun! <>
 
 ### 🎥 Video
