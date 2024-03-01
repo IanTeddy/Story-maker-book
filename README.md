@@ -15,6 +15,6 @@ At first, use an approach that adds new \<p> to HTML, and delete that \<p> when 
 
 
 ### 💻 Running the Project
-Visit website and have some fun! <>
+Visit the website and have some fun! <https://ianteddy.github.io/Story-maker-book/>
 
 ### 🎥 Video
